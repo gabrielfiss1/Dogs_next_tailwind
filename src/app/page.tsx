@@ -1,14 +1,13 @@
-import { Metadata } from "next"
+// app/page.tsx
+import DogsFetcher from "../components/DogsFetcher";  // Importando o DogsFetcher
 
-
-export const metadata: Metadata = { // facilitar que pessoas encontrem o site com mais facilidade
-  title: "Dogs"
-}
-
-export default function Home(){
+const Home = () => {
   return (
     <div>
       <h1>Home</h1>
+      <DogsFetcher />
     </div>
-  )
-}
+  );
+};
+
+export default Home;
